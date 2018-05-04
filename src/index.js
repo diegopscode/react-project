@@ -1,11 +1,24 @@
-import React from 'react';
+import React from "react";
 import ReactDOM from 'react-dom';
+import {AppContainer} from "react-hot-loader";
+import App from "components/App";
 
-const title = 'My Minimal React Webpack Babel Setup';
+const rootEl = document.getElementById("root");
 
-ReactDOM.render(
-  <div>{title}</div>,
-  document.getElementById('root')
-);
+const renderComponent = (Component) => {
+    ReactDOM.render(
+        <AppContainer>
+            <Component/>
+        </AppContainer>,
+        rootEl
+    );
+};
 
-// module.hot.accept();
+renderComponent(App);
+
+// Hot Module Replacement API
+if (module.hot) {
+    module.hot.accept("./components/App", () => {
+        renderComponent(App);
+    });
+}
