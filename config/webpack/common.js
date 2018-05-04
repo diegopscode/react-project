@@ -9,7 +9,10 @@ module.exports = {
 	resolve: {
 		extensions: ['*', '.js', '.jsx'],
 		alias: {
-			"@": resolve(__dirname, '../../src')
+			"@": resolve(__dirname, '../../src'),
+			"@assets": resolve(__dirname, '../../src/assets'),
+			"@styles": resolve(__dirname, '../../src/assets/scss'),
+			"@images": resolve(__dirname, '../../src/assets/images')
 		}
 	},
 	context: resolve(__dirname, '../../src'),
