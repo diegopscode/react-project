@@ -1,7 +1,7 @@
+import Logo from '@images/react_logo.svg';
+import '@scss/index.scss';
 import React from 'react';
 
-import 'assets/scss/App.scss';
-import Logo from 'assets/img/react_logo.svg';
 
 class App extends React.PureComponent {
 	render() {

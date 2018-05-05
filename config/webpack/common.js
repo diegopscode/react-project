@@ -2,7 +2,6 @@
 const {
 	resolve
 } = require('path');
-const StyleLintPlugin = require('stylelint-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -11,7 +10,7 @@ module.exports = {
 		alias: {
 			"@": resolve(__dirname, '../../src'),
 			"@assets": resolve(__dirname, '../../src/assets'),
-			"@styles": resolve(__dirname, '../../src/assets/scss'),
+			"@scss": resolve(__dirname, '../../src/assets/scss'),
 			"@images": resolve(__dirname, '../../src/assets/images')
 		}
 	},
@@ -59,7 +58,6 @@ module.exports = {
 		],
 	},
 	plugins: [
-		new StyleLintPlugin(),
 		new HtmlWebpackPlugin({
 			template: '../static/index.html.ejs',
 		}),
