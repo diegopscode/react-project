@@ -18,7 +18,6 @@
 		"clean-dist": "rm -f -r -d public",
 		"lint": "npm run lint:js && npm run lint:sass",
 		"lint:js": "jshint",
-		"lint:sass": "stylelint ./src/**/*.scss",
 		"start": "npm run dev",
 		"dev": "webpack-dev-server --config=config/webpack/dev",
 		"prod": "npm run build && node express.js",
@@ -34,7 +33,6 @@
 		"babel-preset-env": "^1.6.1",
 		"babel-preset-react": "^6.24.1",
 		"css-loader": "^0.28.11",
-		"express": "^4.16.3",
 		"file-loader": "^1.1.11",
 		"html-webpack-plugin": "^3.2.0",
 		"identity-obj-proxy": "^3.0.0",
@@ -42,6 +40,7 @@
 		"jest": "^22.4.3",
 		"jshint": "^2.9.5",
 		"node-sass": "^4.9.0",
+		"path": "^0.12.7",
 		"postcss-loader": "^2.1.4",
 		"react-addons-test-utils": "^15.6.2",
 		"react-hot-loader": "^4.1.2",
@@ -57,8 +56,17 @@
 		"webpack-merge": "^4.1.2"
 	},
 	"dependencies": {
+		"axios": "^0.18.0",
+		"express": "^4.16.3",
+		"lodash": "^4.17.10",
 		"react": "^16.3.2",
-		"react-dom": "^16.3.2"
+		"react-dom": "^16.3.2",
+		"react-redux": "^5.0.7",
+		"react-router": "^4.2.0",
+		"react-router-dom": "^4.2.2",
+		"redux": "^4.0.0",
+		"redux-promise-middleware": "^5.1.1",
+		"redux-thunk": "^2.2.0"
 	},
 	"postcss": {}
 }
