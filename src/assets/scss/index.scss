@@ -1,12 +1,12 @@
 @import "./_variables";
 @import "./_reset";
 
-@import "./mixins";
+@import "./mixins/index";
 
 @import "./main";
 
-@import "./base";
+@import "./base/index";
 
-@import "./components";
+@import "./components/index";
 
-@import "./containers";
+@import "./containers/index";
