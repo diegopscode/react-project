@@ -11,7 +11,7 @@ import Footer from "./components/base/footer"
 
 import { Provider } from 'react-redux'
 
-import configureStore from "./store/config"
+import configureStore from "./store"
 
 const store = configureStore()
 

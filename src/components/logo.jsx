@@ -1,6 +1,6 @@
 import React from 'react'
 
-import logo from '@images/react_logo.svg'
+import logo from '@images/redux_logo.svg'
 
 const Logo = () => (
 

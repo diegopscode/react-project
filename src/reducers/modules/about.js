@@ -5,7 +5,7 @@ export default function (state = initialState, action) {
   
     switch(type) {
 
-        case "ABOUT_UPDATE": {
+        case "FETCH_ABOUT": {
             return payload
         }
         break
