@@ -1,8 +1,7 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component, Fragment } from 'react'
 import { BrowserRouter } from 'react-router-dom'
 
-import Logo from '@images/react_logo.svg';
-import '@scss/index.scss';
+import '@scss/index.scss'
 
 import RouterContainer from "./route"
 
