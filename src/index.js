@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 
 import { AppContainer } from "react-hot-loader";
 
@@ -8,7 +8,7 @@ import App from "./App";
 const ROOT = document.getElementById("root");
 
 const renderComponent = (Component) => {
-    ReactDOM.render(
+    render(
         <AppContainer>
             <Component/>
         </AppContainer>,

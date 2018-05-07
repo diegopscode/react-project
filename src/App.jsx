@@ -9,30 +9,37 @@ import Header from "./components/base/header"
 import Nav from "./components/base/nav"
 import Footer from "./components/base/footer"
 
+import { Provider } from 'react-redux'
+
+import configureStore from "./store/config"
+
+const store = configureStore()
 
 class App extends Component {
 
 	render() {
 		return (
 			<div className="app-container">
-				<BrowserRouter>
-					<Fragment>
+				<Provider store={store}>
+					<BrowserRouter>
+						<Fragment>
 
-						<Header />
-						<Nav />
+							<Header />
+							<Nav />
 
-						<main className="main-content">
-							<RouterContainer />
-						</main>
+							<main className="main-content">
+								<RouterContainer />
+							</main>
 
-						<Footer />
-						
-					</Fragment>
-				</BrowserRouter>
+							<Footer />
+							
+						</Fragment>
+					</BrowserRouter>
+				</Provider>
 			</div>
 		)
 	}
 	
 }
 
-export default App;
+export default App
