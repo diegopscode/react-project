@@ -1,16 +1,33 @@
+import React, { Component, Fragment } from 'react';
+import { BrowserRouter } from 'react-router-dom'
+
 import Logo from '@images/react_logo.svg';
 import '@scss/index.scss';
-import React from 'react';
+
+import RouterContainer from "./route"
+
+import Header from "./components/base/header"
+import Footer from "./components/base/footer"
 
 
-class App extends React.PureComponent {
+class App extends Component {
+
 	render() {
 		return (
-			<div className="container">
-				<img src={Logo} height="480"/>
-			</div>
-		);
+			<BrowserRouter>
+				<Fragment>
+
+					<Header />
+
+					<RouterContainer />
+
+					<Footer />
+					
+				</Fragment>
+			</BrowserRouter>
+		)
 	}
+	
 }
 
 export default App;
