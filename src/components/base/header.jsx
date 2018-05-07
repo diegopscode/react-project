@@ -1,13 +1,11 @@
 import React from 'react'
 
-import Logo from '@images/react_logo.svg'
+import Logo from '../logo'
 
 const Header = () => (
     <header className="header">
         <div className="container">
-            <div className="logo">
-                <img src={Logo} alt="Logo"/>
-            </div>
+            <Logo />
             <h1>React Project</h1>
         </div>
     </header>
