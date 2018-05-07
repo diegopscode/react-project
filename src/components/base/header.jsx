@@ -1,9 +1,11 @@
 import React from 'react'
 
 const Header = () => (
-    <div className="container">
-        <h1>React Project</h1>
-    </div>
+    <header className="header">
+        <div className="container">
+            <h1>React Project</h1>
+        </div>
+    </header>
 )
 
 export default Header

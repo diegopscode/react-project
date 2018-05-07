@@ -7,6 +7,7 @@ import '@scss/index.scss';
 import RouterContainer from "./route"
 
 import Header from "./components/base/header"
+import Nav from "./components/base/nav"
 import Footer from "./components/base/footer"
 
 
@@ -14,17 +15,22 @@ class App extends Component {
 
 	render() {
 		return (
-			<BrowserRouter>
-				<Fragment>
+			<div className="app-container">
+				<BrowserRouter>
+					<Fragment>
 
-					<Header />
+						<Header />
+						<Nav />
 
-					<RouterContainer />
+						<main className="main-content">
+							<RouterContainer />
+						</main>
 
-					<Footer />
-					
-				</Fragment>
-			</BrowserRouter>
+						<Footer />
+						
+					</Fragment>
+				</BrowserRouter>
+			</div>
 		)
 	}
 	
